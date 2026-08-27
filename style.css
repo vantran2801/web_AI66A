@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     gap: 20px;
     background-color: lightblue;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 500px;
 }
@@ -37,10 +37,25 @@
 
     border: 2px solid black;
     /* border-radius: 20px; */
-    
+
+    flex-grow: 1; /* Allow the card to grow and fill available space */
+    flex-shrink: 1; /* Allow the card to shrink if necessary */
+    flex-basis: 100px; /* Initial size of the card */
+    flex: 0 1 200px; /* shorthand for flex-grow, flex-shrink, flex-basis */
+    font-size: 14px;
 }
 
-.dashboard .card:hover {
+@media screen and (max-width: 600px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    .dashboard .card {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}
+
+/*.dashboard .card:hover {
    color: red;
 }
 
@@ -51,3 +66,4 @@
 nav a:hover {
     color: pink;
 }
+/*
