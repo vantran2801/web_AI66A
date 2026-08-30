@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>Exam Result</header>
+    <main>
+        <form action="" id="score-form">
+            <div class="score">
+                <label for="mon1">Subject 1</label>
+                <input id="mon1" name="mon1" type="number" required min="0" max="10" step="0.01">
+            </div>
+            <div class="score">
+                <label for="mon2">Subject 2</label>
+                <input id="mon2" name="mon2" type="number" required min="0" max="10" step="0.01">
+            </div>
+            <div class="score">
+                <label for="mon3">Subject 3</label>
+                <input id="mon3" name="mon3" type="number" required min="0" max="10" step="0.01">
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <p id="total"></p>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

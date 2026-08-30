@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(78, 78, 255);
+    color: white;
+}
+
+#score-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.score input {
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#score-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(68, 68, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#total {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+}
