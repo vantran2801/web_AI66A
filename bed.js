@@ -1,20 +1,39 @@
-let bedrooms = 4;
+let posts = document.querySelectorAll(".card");
 
-if (bedrooms>3) {
-    console.log("Large house");
- } else {
-    console.log("Standard house");
- }
+console.log("posts:");
 
-for (let i =0; i < 5; i++) {
-    console.log(i);
- }
+for (let i = 0; i < posts.length; i++) {
+    let title = posts[i].querySelector("h2");
+    let content = posts[i].querySelector("p");
+    
+    let post = {
+        title: title.textContent,
+        content: content.textContent.trim(), 
+    };
 
-let sample = {id: 1, name: "Sample Object", type: "Example"};
+    arr.push(post);
 
-console.log(sample.name);
-console.log(sample["name"]);
+    // console.log("Content:", content.textContent.trim());
 
-let arr = [1, 2, 3, 4, 5];
-console.log(arr.length);
+    title.textContent = "hello" + (i + 1);
+    title.style.color = "red";
+}
 
+console.log(arr);
+
+letpost4 = document.createElement("section");
+post4.classList.add("card");
+
+let title4 = document.createElement("h2");
+title4.textContent = "Post 4";
+title4.style.color = "blue";
+
+let content4 = document.createElement("p");
+content4.textContent = "This is the content of post 4.";
+
+post4.appendChild(title4);
+post4.appendChild(content4);
+document.body.appendChild(post4);
+
+let post3 = document.querySelector("#totalScore");
+post3.remove();
